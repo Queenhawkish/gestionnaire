@@ -1,0 +1,686 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
+
+* {
+    margin: 0;
+    font-family: 'Philosopher', sans-serif;
+    color: #1B263B;
+}
+
+
+/* Head */
+
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+h1 {
+    margin: 1rem 0;
+    font-size: 4rem;
+}
+
+h1 a,
+h2 {
+    text-decoration: none;
+}
+
+
+
+
+
+/* Nav */
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    background: #778DA9;
+    padding: 1rem;
+    border-top: 5px solid #415A77;
+    border-bottom: 5px solid #415A77;
+}
+
+
+li>a {
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #1B263B;
+    text-decoration: none;
+}
+
+.logout{
+    font-style: normal;
+}
+
+@media screen and (max-width: 768px) {
+    .logout {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Home */
+
+.home {
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.connect {
+    padding: 1rem;
+    border-radius: 10px;
+    background: #778DA9;
+}
+
+.connect>a {
+    font-size: 1.5rem;
+    color: #1B263B;
+    text-decoration: none;
+}
+
+.connect:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/* connect_members and signup*/
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.connection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #778DA9;
+    border: 5px solid #415A77;
+    border-radius: 10px;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+h2 {
+    display: flex;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    width: 60%;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    h2 {
+        width: 100%;
+    }
+}
+    
+.new {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30rem;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem;
+}
+
+.membersco {
+    border-radius: 5px;
+    text-align: center;
+    background: #778DA9;
+    color: #1B263B;
+    padding: 5px;
+    font-size: 1rem;
+    margin: 1rem;
+    width: 15rem;
+}
+
+.memberssub {
+    background: #778DA9;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+}
+
+.signup {
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+::placeholder {
+    color: #1B263B;
+}
+
+.co {
+    display: flex;
+    flex-direction: column;
+}
+
+.signin {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+}
+
+.mymargintop {
+    margin-top: 1rem;
+}
+
+.butsignup {
+    font-size: 1.5rem;
+    background: #778DA9;
+}
+
+.error {
+    color: brown;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.register {
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* members/manager_space */
+
+h3{
+    display: flex;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    font-size: 3rem;
+
+}
+
+.member {
+    text-underline-offset: 5px;
+    text-decoration: none;
+    margin: 1rem;
+}
+
+.addcost {
+    display: flex;
+    text-decoration: none;
+    font-size: 1.5rem;
+    background-color: #778DA9;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.table{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+table{
+    border-collapse: collapse;
+    border: 5px solid #415A77;
+    margin: 1rem;
+    width: 70%;
+}
+
+th{
+    background: #778DA9;
+    border: 5px solid #415A77;
+    padding: 0.5rem;
+}
+
+td{
+    border: 5px solid #415A77;
+    text-align: center;
+    padding: 0.5rem;
+    width: 20%;
+}
+
+
+.butaction{
+    background: #778DA9;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 0.2rem;
+    border: 0px;
+}
+
+.butmarg{
+    margin-left: 0.5rem;
+}
+
+.delete{
+    margin-left: 2rem;
+    border: 0;
+}
+
+@media (max-width: 720px) {
+    .delete{
+        margin-top: 2px;
+        margin-left: 0;
+    }
+    .butmarg{
+        margin-left: 0;
+    }
+    h3{
+        text-align: center;
+    }
+    .media{
+        display: none;
+    }
+    table{
+        width: 100%;
+    }
+    
+}
+
+.delete:hover{
+    cursor: pointer;
+}
+
+li{
+    list-style: none;
+}
+
+.infos:hover{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* cost */
+
+#informations{
+    background: #778DA9;
+    border-radius: 5px;
+    width: 30%;
+    height: fit-content;
+    padding: 1rem;
+    border: 5px solid #415A77;
+    margin: 1rem;
+}
+
+@media screen and (max-width: 720px) {
+    #informations{
+        width: 80%;
+    }
+}
+
+
+.linkback{
+    text-decoration: none;
+}
+
+.goback{
+    font-size: 1.3rem;
+}
+
+.info{
+    margin: 1rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.action:hover{
+    cursor: pointer;
+}
+
+ul{
+    padding: 0;
+}
+
+.modify{
+    text-decoration: none;
+    border: 5px solid #415A77;
+    font-weight: 600;
+    background-color: #1B263B;
+    color: #778DA9;
+}
+
+.title{
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    margin: 3px;
+    margin-top: 15px;
+}
+
+#confirm{
+    background: #778DA9;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    padding: 1rem;
+    width: 15rem;
+    text-align: center;
+    border: 5px solid #415A77;
+    display: none;
+    position: fixed;
+    top: 40%;
+    left: 40.85%;
+    animation: opadelete 500ms;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem;
+}
+
+.del{
+    width: 3rem;
+}
+
+@keyframes opadelete {
+    0%    { opacity: 0; }
+    100%  { opacity: 1; }
+}
+
+.iaction{
+    font-weight: 900;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    background-color: #1B263B;
+    color: #778DA9;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.linkupdate{
+    margin-top: 2rem;
+}
+
+.update{
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 1.3rem;
+    background-color: #1B263B;
+    color: #778DA9;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* update_cost */
+
+.oldproof{
+    padding: 1rem;
+}
+
+.nowproof{
+    width: 10rem;
+    margin-top: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* add_cost */
+
+.price {
+    width: 5rem;
+}
+
+.add{
+    width: 30%;
+}
+
+.add:hover {
+    cursor: pointer;
+}
+
+#amountdetails {
+    display: none;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.cost{
+    margin: 1rem 0 2rem 0;
+    text-align: center;
+}
+
+.text{
+    background: white;
+}
+
+.proof{
+    text-align: center;
+    color: #1B263B;
+    padding: 1rem;
+    font-size: 1rem;
+    width: 57%;
+}
+
+.back{
+    text-decoration: none;
+    border-bottom: 2px solid #1B263B;
+    border-right: 2px solid #1B263B;
+    border-left: 2px solid #545454;
+    border-top: 2px solid #545454;
+    border-radius: 5px;
+    width: 27.5%;
+    padding: 0.25rem;
+    text-align: center;
+}
+
+.back:active{
+    border-bottom: 2px solid #545454;
+    border-right: 2px solid #545454;
+    border-left: 2px solid #1B263B;
+    border-top: 2px solid #1B263B;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    text-align: center;
+    background: #778DA9;
+    border-top: 5px solid #415A77;
+    border-bottom: 5px solid #415A77;
+    padding: 1rem;
+}
+
+.footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+footer a {
+    color: #1B263B;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .form {
+        flex-direction: column;
+    }
+
+    .connection {
+        width: 80%;
+    }
+
+    footer {
+        position: relative;
+    }
+
+    .footer{
+        position: relative;
+    }
+}
