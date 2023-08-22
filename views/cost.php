@@ -38,7 +38,7 @@
                 </ul>
 
             <?php }
-                    if (isset($_SESSION['user'])) { ?>
+                    if (isset($_SESSION['user']) && $cost["dec_id"] == 1) { ?>
                 <div class="linkupdate">
                     <a href="../controllers/controllers_update_cost.php?id=<?= $cost["id_cost"] ?>" class="update" title="modifier">
                         Modifier
@@ -53,7 +53,7 @@
                 </select>
                 <p class="error"><?= $error['decision'] ?? "" ?></p>
 
-                <textarea name="reason_decision" id="reason_decision" cols="30" rows="5" class="membersco"><?= htmlspecialchars($_POST["reason_decision"] ?? "Motif du refus") ?></textarea>
+                <textarea name="reason_decision" id="reason_decision" cols="30" rows="5" class="membersco text"><?= htmlspecialchars($_POST["reason_decision"] ?? "Motif du refus") ?></textarea>
                 <p class="error"><?= $error['reason_decision'] ?? "" ?></p>
                 <button type="submit" class="membersco add">Valider</button>
 

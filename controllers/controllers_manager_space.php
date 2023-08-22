@@ -5,8 +5,14 @@ session_start();
 
 if (!isset($_SESSION['manager'])) {
     header('Location: ../index.php');
+    if (isset($_SESSION['user'])) {
+        header('Location: controllers_members_space.php');
+        exit;
+    }
     exit;
 }
+
+
 
 require_once "../config.php";
 require_once "../helpers/Database.php";

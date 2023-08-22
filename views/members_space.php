@@ -11,7 +11,7 @@
             <thead>
                 <tr>
                     <th>N° note de frais</th>
-                    <th class="media">Type</th>
+                    <th>Date</th>
                     <th>Statut</th>
                     <th class="thaction">Action</th>
                 </tr>
@@ -27,7 +27,7 @@
                     ?>
                     <tr>
                         <td><?= $cost["id_cost"] ?></td>
-                        <td class="media"><?= $cost["Reason"] ?></td>
+                        <td><?= $cost["cost_date"] ?></td>
                         <td><?= $cost["decision"] ?></td>
 
                         <td>
@@ -37,9 +37,11 @@
 
                                 <i class="bi bi-info-circle-fill"></i></a>
 
+                                <?php if ($cost["dec_id"] == 1) { ?>
                             <button class="butaction delete" title="supprimer" data-id="<?= $cost["id_cost"] ?>">
                                 <i class="bi bi-trash3-fill" data-id="<?= $cost["id_cost"] ?>"></i>
                             </button>
+                            <?php } ?>
                         </td>
                     </tr>
                 <?php } ?>

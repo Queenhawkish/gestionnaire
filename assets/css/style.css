@@ -321,9 +321,6 @@ td{
     h3{
         text-align: center;
     }
-    .media{
-        display: none;
-    }
     table{
         width: 100%;
     }
@@ -464,6 +461,11 @@ ul{
     padding: 10px;
 }
 
+#reason_decision{
+    display: none;
+    text-align: center;
+}
+
 
 
 
@@ -553,6 +555,7 @@ ul{
 
 .text{
     background: white;
+    margin: 1rem auto;
 }
 
 .proof{

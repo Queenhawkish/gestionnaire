@@ -83,10 +83,15 @@ dels.forEach(del => {
 
 
 let decision = document.getElementById("decision");
+decision.addEventListener("change", function () {
+    if (decision.value == 3) {
+        let reason_decision = document.getElementById("reason_decision");
 
-if (decision.value == 3){
-    
-}
+        reason_decision.style.display = "block";
+    }
+})
+
+
 // let infos = document.querySelectorAll(".infos");
 
 // infos.forEach(info => {
